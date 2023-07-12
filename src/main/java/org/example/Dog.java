@@ -28,6 +28,11 @@ public class Dog extends Animal{
         return lifeExpectancy + this.visitsToVet;
     }
 
+    //Overidden method in Dog class
+    public String makeNoise() {
+        return "The Dog goes woof";
+    }
+
     //Getters
 
     public String getName() {
