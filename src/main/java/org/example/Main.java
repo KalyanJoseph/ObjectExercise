@@ -86,6 +86,14 @@ public class Main {
         for (Animal animal: animals) {
             System.out.println(animal.makeNoise());
         }
+
+        // array of object implementing the same interface
+        Buyable[] purchases = { new Dog(), new Laptop(100.00)};
+        // looping through interface array and invoking overriden methods
+        for (Buyable purchase: purchases) {
+            System.out.println(purchase.buy(2));
+        }
+
     }
 }
 

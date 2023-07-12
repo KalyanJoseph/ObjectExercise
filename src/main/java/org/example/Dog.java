@@ -1,6 +1,6 @@
 package org.example;
 
-public class Dog extends Animal{
+public class Dog extends Animal implements Buyable{
     //attributes
     private String name;
     private String owner;
@@ -31,6 +31,11 @@ public class Dog extends Animal{
     //Overidden method in Dog class
     public String makeNoise() {
         return "The Dog goes woof";
+    }
+
+    // overriden method from the interface
+    public String buy(int amount) {
+        return "You bought " + amount + " dogs.";
     }
 
     //Getters
