@@ -1,6 +1,6 @@
 package org.example;
 
-public class Animal {
+public abstract class Animal {
     //attributes
     private String species;
     private String noise;
@@ -38,6 +38,10 @@ public class Animal {
     public String toString() {
         return "This is an animal of species: " + this.getSpecies();
     }
+
+    //abstract method in superclass
+    public abstract String makeNoise();
+
 
     //Getters and Setters
     public String getSpecies() {

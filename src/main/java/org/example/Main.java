@@ -14,20 +14,20 @@ public class Main {
 //        System.out.println("Life Expectancy: " + a2.getLifeExpectancy());
 
         //Creating a new animal using the constructor with all attribute variables
-        Animal a3 = new Animal();
+//        Animal a3 = new Animal();
         //Testing that it works with print statements
 //        System.out.println("Species:" + a3.getSpecies());
 //        System.out.println("Noise: " + a3.getNoise());
 //        System.out.println("Land Animal?: " + a3.isLandAnimal());
 
         //Creating another new animal using the full constructor
-        Animal a4 = new Animal("whale","click",2000F,50,false);
+//        Animal a4 = new Animal("whale","click",2000F,50,false);
         //Testing again
 //        System.out.println("\nSpecies:" + a4.getSpecies());
 //        System.out.println("Noise: " + a4.getNoise());
 //        System.out.println("Land Animal?: " + a4.isLandAnimal());
 
-        Animal a5 = new Animal("tiger","meow");
+//        Animal a5 = new Animal("tiger","meow");
         //Testing that it works with print statements
 //        System.out.println("\nSpecies:" + a5.getSpecies());
 //        System.out.println("Noise: " + a5.getNoise());
@@ -68,11 +68,23 @@ public class Main {
 //        System.out.println(d2.getName());
 
         //Array of Animals/Dogs created
-        Animal[] animals =  { new Animal(), new Dog(), new Dog(50,15,"Bob","Mabs",4)
+//        Animal[] animals =  { new Dog(), new Dog(50,15,"Bob","Mabs",4)
+//        };
+//        //foreach loop, printing the life expectancy of the animals in the array
+//        for (Animal animal: animals) {
+//            System.out.println("Life Expectancy: " + animal.getLifeExpectancy());
+//        }
+
+//        Dog d1 = new Dog();
+//        System.out.println(d1.makeNoise());
+
+        //array of type Animal containing Dog objects
+        Animal[] animals =  { new Dog(), new Dog(50,15,"Bob","Mabs",4)
         };
-        //foreach loop, printing the life expectancy of the animals in the array
+
+        //looping through array and invoking the abstract method
         for (Animal animal: animals) {
-            System.out.println("Life Expectancy: " + animal.getLifeExpectancy());
+            System.out.println(animal.makeNoise());
         }
     }
 }
