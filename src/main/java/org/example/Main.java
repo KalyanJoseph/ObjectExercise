@@ -1,5 +1,6 @@
 package org.example;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Main {
@@ -124,7 +125,10 @@ public class Main {
         Date date = new Date();
         System.out.println("Todays date: " + date);
 
-        
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MMMM-dd hh:mm:ss", Locale.FRANCE);
+        String date2 = simpleDateFormat.format(date);
+        System.out.println(date2);
+
     }
 }
 
