@@ -1,6 +1,6 @@
 package org.example;
 
-public class Dog extends Animal implements Buyable{
+public class Dog extends Animal implements Buyable, Comparable<Dog>{
     //attributes
     private String name;
     private String owner;
@@ -50,5 +50,21 @@ public class Dog extends Animal implements Buyable{
 
     public int getVisitsToVet() {
         return visitsToVet;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", owner='" + owner + '\'' +
+                ", visitsToVet=" + visitsToVet +
+                ", lifeExpectancy=" + lifeExpectancy +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Dog o) {
+        //return this.lifeExpectancy - o.lifeExpectancy;
+        return this.getName().compareTo(o.getName());
     }
 }

@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
         //initialising new objects
@@ -78,22 +80,51 @@ public class Main {
 //        Dog d1 = new Dog();
 //        System.out.println(d1.makeNoise());
 
-        //array of type Animal containing Dog objects
-        Animal[] animals =  { new Dog(), new Dog(50,15,"Bob","Mabs",4)
-        };
+//        //array of type Animal containing Dog objects
+//        Animal[] animals =  { new Dog(), new Dog(50,15,"Bob","Mabs",4)
+//        };
+//
+//        //looping through array and invoking the abstract method
+//        for (Animal animal: animals) {
+//            System.out.println(animal.makeNoise());
+//        }
+//
+//        // array of object implementing the same interface
+//        Buyable[] purchases = { new Dog(), new Laptop(100.00)};
+//        // looping through interface array and invoking overriden methods
+//        for (Buyable purchase: purchases) {
+//            System.out.println(purchase.buy(2));
+//        }
+//        Dog dog1 = new Dog(50,200,"sprinkles","Mabs",4);
+//        Dog d1 = new Dog(50,1,"Bob","Mabs",4);
+//        Dog d2 = new Dog();
+//        List<Dog> dogsList = new ArrayList<>();
+//        dogsList.add(dog1);
+//        dogsList.add(d1);
+//        dogsList.add(d2);
+//        System.out.println("before sort:");
+//        System.out.println(dogsList);
+//        Collections.sort(dogsList);
+//        System.out.println("After sort");
+//        System.out.println(dogsList.toString());
+//
+//        Map<Integer, Dog> dogMap = new TreeMap<>();
+//        for (int i = 0; i < dogsList.size(); i++){
+//            dogMap.put(i, dogsList.get(i));
+//        }
+//        Set<Map.Entry<Integer,Dog>> set = dogMap.entrySet();
+//
+//        for (Map.Entry<Integer,Dog> dog:
+//             set) {
+//            System.out.println("the key is: " + dog.getKey() + " and the value is: " + dog.getValue());
+//        }
+//
+//        System.out.println(dogMap);
 
-        //looping through array and invoking the abstract method
-        for (Animal animal: animals) {
-            System.out.println(animal.makeNoise());
-        }
+        Date date = new Date();
+        System.out.println("Todays date: " + date);
 
-        // array of object implementing the same interface
-        Buyable[] purchases = { new Dog(), new Laptop(100.00)};
-        // looping through interface array and invoking overriden methods
-        for (Buyable purchase: purchases) {
-            System.out.println(purchase.buy(2));
-        }
-
+        
     }
 }
 
